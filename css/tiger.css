@@ -1,0 +1,108 @@
+.gTiger {
+	height: 376px;
+	width: 771px;
+	background-image: url(../images/tiger_bg_02.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.gTiger .tigerClose {
+	height: 43px;
+	width: 43px;
+	position: absolute;
+	top: 1px;
+	right: 24px;
+	text-indent: -99999px;
+	overflow: hidden;
+	display: block;
+}
+.gTiger .tigerNotice {
+	background-image: url(../images/tiger_click.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 50px;
+	width: 66px;
+	position: absolute;
+	z-index: 100;
+	top: 116px;
+	right: 120px;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+.gTiger .tigerHand {
+	background-image: url(../images/huagan.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: block;
+	height: 85px;
+	width: 60px;
+	position: absolute;
+	overflow: hidden;
+	top: 159px;
+	right: 124px;
+	text-indent: -99999px;
+	z-index: 1000;
+}
+.gTiger .active {
+	top: 180px;
+}
+.gTiger .tigerRewards {
+	position: absolute;
+	text-align: center;
+	bottom: 48px;
+	left: 237px;
+	width: 306px;
+	color: red;
+	font-family: "微软雅黑";
+	display: none;
+}
+.gTiger .tigerRewards .tigerGetRewards {
+	background-image: url(../images/get_rewards.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 26px;
+	width: 95px;
+	margin-left: 10px;
+	display: inline-block;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+.gTiger .tigerMain {
+	height: 148px;
+	width: 423px;
+	position: absolute;
+	z-index: 1000;
+	left: 153px;
+	top: 131px;
+}
+.tigerMain ul li {
+	overflow: hidden;
+	width: 128px;
+	display: block;
+	float: left;
+	height: 148px;
+	margin-right: 13px;
+	position: relative;
+}
+.gTiger .tigerMain ul li .tigerPiece {
+	background-image: url(../images/tiger_number.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 1064px;
+	width: 97px;
+	position: relative;
+	left: 17px;
+}
+.gTiger .tigerMain ul li .tigerAction {
+	background-image: url(../images/action.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 151px;
+	width: 133px;
+	position: absolute;
+	left: -2px;
+	top: -1px;
+	z-index: 10000;
+}
