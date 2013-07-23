@@ -51,7 +51,7 @@ function tigerOutNumber(score){
 		 setTimeout(function(){
 		 tigerEndEach(lock);
 		 $('.tigerMain ul li').eq(lock).find('.tigerPiece').animate({top:(-1)*timeNum[lock]*pic+'px'},tigerNumberTime);
-	 	 console.log(lock);
+	 	 //console.log(lock);
 		 lock++;
 		 if(lock==3){
 			tigerMsg(score);		 
@@ -61,20 +61,32 @@ function tigerOutNumber(score){
 	 }
 	}
 	al();
-	
+	/* ie9 bug 
+	while(lock<3){
+		setTimeout(function(lock){
+			tigerEndEach(lock);
+			//console.log(new Date().getSeconds());
+			$('.tigerMain ul li').eq(lock).find('.tigerPiece').animate({top:(-1)*timeNum[lock]*pic+'px'},tigerNumberTime);
+			if(lock==2){
+				tigerMsg(score);
+			}
+		},tigerIntervalTime*lock,lock);
+		lock++;
+	}
 		
+	*/
 	//console.log(firstNum,secondNum,thirdNum);	
 }
 
 
 $(document).ready(function(){
 	$('.tigerClose').click(function(){
-		$('.tiger').fadeOut('300');	
+		$('.gTiger').fadeOut('300');	
 	});
 	
 	$('.tigerHand').click(function(){
 		tigerAction();
-		setTimeout("tigerGetResult(0)",3000);
+		setTimeout("tigerGetResult(0)",2000);
 	})
 	
 })
